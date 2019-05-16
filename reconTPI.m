@@ -161,7 +161,7 @@ gdat = gdat(xs:xe,xs:xe,xs:xe);
 
 %%
 outfilename=strcat(outfolder,'/','ma_',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
-savenii(gdat,oufilename,res);
+
 %%
 
 outfilename_imag = strcat(outfolder,'/','im_',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
