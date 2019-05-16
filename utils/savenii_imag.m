@@ -10,7 +10,6 @@ N = size(ima);
 m = max(abs(ima(:)));
 normFactor= 8192/m;
 normFactor=1.0;
-filename = strcat("im_",filename);
 save_nii(make_nii(flipdim(permute(normFactor*imag(squeeze(ima)),[2 1 3]),3),[res res res],N/2 ),filename);
 
 out = 1;

@@ -3,7 +3,7 @@ function [ out ] = savenii( ima,filename,res)
 %   Detailed explanation goes here
 %%
 if nargin <2
-    filename = 'untitled.nii';
+    filename = 'ma_untitled.nii';
     res = 1.0;
 end
 N = size(ima);
