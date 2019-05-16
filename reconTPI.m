@@ -160,15 +160,15 @@ gdat = gdat(xs:xe,xs:xe,xs:xe);
     ima(:,:,:,echo)= gdat; 
 
 %%
-outfilename=strcat(outfolder,'/',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
-savenii(gdat,strcat(outfolder,'/',oufilename,'.nii',4));
+outfilename=strcat(outfolder,'/','ma_',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
+savenii(gdat,oufilename,res);
 %%
 
 outfilename_imag = strcat(outfolder,'/','im_',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
-savenii_imag(gdat,strcat(outfolder,'/',outfilename_imag,'.nii',4));
+savenii_imag(gdat,outfilename_imag,res);
 
-outfilename_real = strcat(outfolder,'/',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
-savenii_real(gdat,strcat(outfolder,'/','re_',outfilename_real,'.nii',4);
+outfilename_real = strcat(outfolder,'/','re_',strrep(file,'.dat',''),'_filter_',filter,'_echo_',num2str(echo),'.nii');
+savenii_real(gdat,outfilename_real,res);
 
 end
 
